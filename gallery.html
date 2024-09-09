@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PET+ | Gallery</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/test.ico" type="image/x-icon" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header id="home">
+      <!-- navbar -->
+      <nav class="navbar">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img
+              src="./images/logo.svg"
+              class="nav-logo"
+              alt="company log pet plus"
+            />
+            <button type="button" class="nav-toggle" id="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- end of nav header -->
+          <!-- nav links -->
+          <ul class="nav-links" id="nav-links">
+            <!-- single link -->
+            <li>
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="about.html" class="nav-link">about</a>
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="services.html" class="nav-link">services</a>
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="products.html" class="nav-link">products</a>
+            </li>
+            <!-- end of single link -->
+            <!-- single link -->
+            <li>
+              <a href="#gallery" class="nav-link scroll-link">gallery</a>
+            </li>
+            <!-- end of single link -->
+          </ul>
+          <!-- end of nav links -->
+          <!-- nav icons -->
+          <ul class="nav-icons">
+            <!-- single icon-->
+            <li>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <!-- end of single icon-->
+            <!-- single icon-->
+            <li>
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <!-- end of single icon-->
+            <!-- single icon-->
+            <li>
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <!-- end of single icon-->
+          </ul>
+          <!-- end of nav icons -->
+        </div>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="gallery-title">
+        <h2>Photo <span>Gallery</span></h2>
+
+        <!-- Pets & Peoples -->
+        <section class="section2 petsandpeople">
+          <img
+            src="./images/pnp-1.jpg"
+            title="Mya and Her Good Boy"
+            class="gallery-photo"
+            data-id="1"
+            alt="woman petting dog"
+          />
+          <img
+            src="./images/pnp-2.jpg"
+            title="Adorable Kitten Simon"
+            class="gallery-photo"
+            data-id="2"
+            alt="kitten staring"
+          />
+          <img
+            src="./images/pnp-3.jpg"
+            title="Rylee and Viper"
+            class="gallery-photo"
+            data-id="3"
+            alt="snake coiled around woman's arms"
+          />
+          <img
+            src="./images/pnp-4.jpg"
+            title="Temo Playing Uno"
+            class="gallery-photo"
+            data-id="4"
+            alt="small rodent sitting on couch next to playing cards"
+          />
+          <img
+            src="./images/pnp-5.jpg"
+            title="Robert and Roland Strike a Pose"
+            class="gallery-photo"
+            data-id="5"
+            alt="man with parrot perched on shoulder"
+          />
+          <img
+            src="./images/pnp-6.jpg"
+            title="Franklin the Turtle Hiding"
+            class="gallery-photo"
+            data-id="6"
+            alt="tiny turtle being held by two fingers"
+          />
+          <img
+            src="./images/pnp-7.jpg"
+            title="A Family's Anniversary"
+            class="gallery-photo"
+            data-id="7"
+            alt="man and woman with dog"
+          />
+          <img
+            src="./images/pnp-8.jpg"
+            title="Our Pet Plus veterinarians Doing a Checkup"
+            class="gallery-photo"
+            data-id="8"
+            alt="two veterinarians checking on dog's pulse"
+          />
+          <img
+            src="./images/pnp-9.jpg"
+            title="Puppy Cream and Her Food Suppliers"
+            class="gallery-photo"
+            data-id="9"
+            alt="woman holding puppy wrapped in the arms of a man"
+          />
+        </section>
+        <!-- modal -->
+        <div class="modal">
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="modal-content">
+            <!-- prev next buttons -->
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            <!-- content -->
+            <img
+              src="./images/pets-1.jpg"
+              class="main-img"
+              alt="unused image of pet"
+            />
+            <h3 class="image-name">image name</h3>
+            <div class="modal-images">
+              <img
+                src="./images/pets-5.jpg"
+                title="Pet Example"
+                class="modal-img"
+                data-id="5"
+                alt="unused image of pet"
+              />
+              <img
+                src="./images/pets-4.jpg"
+                title="Pet Example #2"
+                class="modal-img selected"
+                data-id="5"
+                alt="unused image of pet"
+              />
+            </div>
+          </div>
+        </div>
+        <a href="gallery-2.html" class="btn">Next Page</a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section footer">
+      <!-- footer links -->
+      <ul class="footer-links">
+        <!-- single link -->
+        <li>
+          <a href="index.html" class="footer-link">home</a>
+        </li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li>
+          <a href="about.html" class="footer-link">about</a>
+        </li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li>
+          <a href="services.html" class="footer-link">services</a>
+        </li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li>
+          <a href="products.html" class="footer-link">products</a>
+        </li>
+        <!-- end of single link -->
+        <!-- single link -->
+        <li>
+          <a href="#gallery" class="footer-link scroll-link">gallery</a>
+        </li>
+        <!-- end of single link -->
+      </ul>
+      <!-- end of footer links -->
+      <!-- footer icons -->
+      <ul class="footer-icons">
+        <!-- single icon-->
+        <li>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <!-- end of single icon-->
+        <!-- single icon-->
+        <li>
+          <a href="https://www.twitter.com" target="_blank" class="footer-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <!-- end of single icon-->
+        <!-- single icon-->
+        <li>
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            class="footer-icon"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <!-- end of single icon-->
+      </ul>
+      <!-- end of footer icons -->
+      <p class="copyright">
+        copyright &copy; Pet Plus <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="./js/gallery.js"></script>
+  </body>
+</html>
