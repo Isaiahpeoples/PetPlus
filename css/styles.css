@@ -444,10 +444,12 @@ About Specific Page
   font-size: large;
   margin: 2rem 0;
   text-align: center;
+  color: black;
 }
 
 .about-title h2 {
   text-transform: uppercase;
+  color: black;
 }
 
 .about-title span {
@@ -612,6 +614,7 @@ Services Specific Page
 
 .serviced-title h2 {
   text-transform: uppercase;
+  color: black;
 }
 
 .serviced-title span {
@@ -850,6 +853,7 @@ Products Menu
 
 .products-title h2{
   text-transform: uppercase;
+  color: black;
 }
 
 .products-title span {
@@ -908,11 +912,15 @@ Products Menu
 .item-info header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px dotted var(--clr-grey-5);
+  border-bottom: 0.5px dotted black;
 }
 
 .item-info h4 {
   margin-bottom: 0.5rem;
+}
+
+.item-info h4:nth-child(1) {
+  color: black;
 }
 
 .price {
@@ -922,6 +930,7 @@ Products Menu
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -1236,6 +1245,7 @@ Gallery Specific Page
 
 .gallery-title h2 {
   text-transform: uppercase;
+  color: black;
 }
 
 .gallery-title span {
