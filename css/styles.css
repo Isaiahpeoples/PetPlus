@@ -486,6 +486,7 @@ About Specific Page
 }
 
 .tab-btn {
+  color: #000;
   padding: 1rem 0;
   border: none;
   text-transform: capitalize;
@@ -731,6 +732,17 @@ Services Specific Page
 }
 }
 
+@media screen and (max-width: 376px) {
+  .serviced p {
+  text-align: center;
+  color: var(--clr-grey-1);
+  font-size: 1rem;
+  word-spacing: var(--spacing);
+  width: 90vw;
+  padding: 1rem;
+}
+}
+
 @media screen and (max-width: 375px) {
   .serviced p {
   text-align: center;
@@ -738,7 +750,7 @@ Services Specific Page
   font-size: 1rem;
   word-spacing: var(--spacing);
   width: 90vw;
-  padding: 0 .2rem 1rem .2rem;
+  padding: 1rem 0.5rem;
 }
 }
 /*
@@ -1208,19 +1220,14 @@ Gallery Specific Page
 */
 .section2 {
   padding: .5rem 0;
-  width: 90vw;
+  width: 80vw;
   margin: 2rem auto;
   max-width: 1170px;
   display: grid;
   gap: 2rem;
 }
 
-@media screen and (min-width: 768px) {
-  .section2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
+
 
 @media screen and (min-width: 992px) {
   .section2 {
