@@ -399,7 +399,7 @@ Hero
   
 .overlay {
   height: 100%;
-  padding: 0 0 1.2%;
+  margin-top: 0 0 1.2%;
 }
 
   .hero-vid {
@@ -435,11 +435,12 @@ position: relative;
     background: none;
     min-height: 100vh;
     min-width: 100vw;
+    margin-bottom: 4rem;
   }
   
 .overlay {
   height: 100%;
-  padding: 0 0 1.2%;
+  margin-top: 0 0 1.2%;
 }
 
   .hero-vid {
