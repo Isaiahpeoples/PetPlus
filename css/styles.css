@@ -156,6 +156,7 @@ p {
   border: 2px solid transparent;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
 }
 
 .btn:hover {
@@ -326,10 +327,25 @@ Hero
 */
 .hero {
   min-height: 100vh;
-  background: var(--clr-primary-5);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(rgba(37,103,100,0.2),rgba(0,0,0,0.7)), url(../images/hero.jpg) center/cover no-repeat;
+}
+
+
+.overlay {
+  height: 100%;
+  max-width: 100vw;
+  background: linear-gradient(rgba(37,103,100,0.1),rgba(0,0,0,0.7)), center/cover no-repeat;
+}
+
+.hero-vid {
+  position: absolute;
+  z-index: -20;
+  height: 100vh;
+  max-width: 100%;
+  
 }
 
 .hero-banner {
@@ -339,6 +355,8 @@ Hero
 }
 
 .hero-banner h1 {
+
+  position: relative;
   text-transform: uppercase;
   font-family: "Knewave", system-ui;
   font-weight: 400;
@@ -347,6 +365,8 @@ Hero
 }
 
 .hero-banner p {
+
+  position: relative;
   max-width: 35rem;
   margin-left: auto;
   margin-right: auto;
@@ -356,6 +376,8 @@ Hero
 }
 
 .hero-btn {
+  border-radius: var(--radius);
+  position: relative;
   padding: 0.9rem 1.6rem;
   font-size: 1.25rem;
   background: var(--clr-white);
@@ -370,16 +392,89 @@ Hero
 
 @media screen and (min-width:768px) {
   .hero {
-    background: linear-gradient(rgba(37,103,100,0.7),rgba(0,0,0,0.7)), url(../images/main.jpeg) center/cover no-repeat;
+
+    min-height: 100vh;
+    min-width: 100vw;
   }
+  
+.overlay {
+  height: 100%;
+  padding: 0 0 1.2%;
+}
+
+  .hero-vid {
+  position: absolute;
+  z-index: -20;
+  height: 100vw;
+  width: 100vw;
+  max-width: none;
+}
 
   .hero-banner {
     padding: 0;
   }
-  .hero-banner p {
-    max-width: 45rem;
-  }
+
+  .hero-banner h1 {
+
+  position: relative;
+  max-width: 35rem;
 }
+
+  .hero-banner p {
+position: relative;
+    max-width: 35rem;
+  }
+
+  .hero-btn {
+position: relative;
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background: none;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  
+.overlay {
+  height: 100%;
+  padding: 0 0 1.2%;
+}
+
+  .hero-vid {
+  position: absolute;
+  z-index: -20;
+  height: 100vw;
+  width: 100vw;
+  max-width: none;
+}
+
+  .hero-banner {
+    padding: 0;
+  }
+
+  .hero-banner h1 {
+  top: 17.5rem;
+  right: 4rem;
+  position: absolute;
+  max-width: 35rem;
+}
+
+  .hero-banner p {
+    top: 30rem;
+    right: 4rem;
+    position: absolute;
+    max-width: 35rem;
+  }
+
+  .hero-btn {
+  top: 35rem;
+  right: 15rem;
+  position: absolute;
+}
+}
+
 /*
 =============== 
 About
@@ -1004,6 +1099,7 @@ Contact
   background: var(--clr-white);
   text-transform: capitalize;
   border: transparent;
+  border-radius: var(--radius);
 }
 
 .form-control::-webkit-input-placeholder {
