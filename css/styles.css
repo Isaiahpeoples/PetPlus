@@ -400,6 +400,11 @@ Hero
   color: var(--clr-white);
   border-color: var(--clr-white);
 }
+@media screen and (max-width:400px) {
+  .hero-banner h1 {
+    font-size: 4.5rem;
+  }
+}
 
 @media screen and (min-width:768px) {
   .hero {
