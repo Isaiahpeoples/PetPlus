@@ -182,14 +182,14 @@ p {
 }
 
 .section-center {
-  width: 90vw;
+  width: 90%;
   margin: 0 auto;
   max-width: 1170px;
 }
 
 @media screen and (min-width: 992px) {
   .section-center {
-  width: 95vw;
+    width: 95%;
   }
 }
 
@@ -326,22 +326,22 @@ Hero
 ===============
 */
 .hero {
-  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   background: linear-gradient(rgba(37,103,100,0.2),rgba(0,0,0,0.7)), url(../images/hero.jpg) center/cover no-repeat;
 }
-
-
-
 
 .hero-vid {
   position: absolute;
   z-index: -20;
-  height: 100vh;
-  max-width: 100%;
-  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero-banner {
@@ -388,39 +388,27 @@ Hero
 
 @media screen and (min-width:768px) {
   .hero {
-
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100%;
   }
-  
-
-
-  .hero-vid {
-  position: absolute;
-  z-index: -20;
-  height: 100vw;
-  width: 100vw;
-  max-width: none;
-}
 
   .hero-banner {
     padding: 0;
   }
 
   .hero-banner h1 {
-
-  position: relative;
-  max-width: 35rem;
-}
+    position: relative;
+    max-width: 35rem;
+  }
 
   .hero-banner p {
-position: relative;
+    position: relative;
     max-width: 35rem;
   }
 
   .hero-btn {
-position: relative;
-}
+    position: relative;
+  }
 }
 
 
@@ -428,44 +416,41 @@ position: relative;
 @media screen and (min-width:1200px) {
   .hero {
     background: none;
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100%;
     margin-bottom: 4rem;
   }
-  
-
-
-  .hero-vid {
-  position: absolute;
-  z-index: -20;
-  height: 100vw;
-  width: 100vw;
-  max-width: none;
-}
 
   .hero-banner {
     padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    text-align: right;
   }
 
   .hero-banner h1 {
-  top: 17.5rem;
-  right: 4rem;
-  position: absolute;
-  max-width: 35rem;
-}
-
-  .hero-banner p {
-    top: 30rem;
-    right: 4rem;
-    position: absolute;
-    max-width: 35rem;
+    margin-bottom: 2rem;
   }
 
-  .hero-btn {
-  top: 35rem;
-  right: 15rem;
-  position: absolute;
+  .hero-banner p {
+    margin-left: auto;
+    margin-bottom: 2rem;
+  }
 }
+
+@media screen and (min-width: 1778px) {
+  .hero {
+    background: none;
+    height: 100vh;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .hero-banner {
+    max-width: 1400px;
+  }
 }
 
 
@@ -480,13 +465,7 @@ position: relative;
   
 
 
-  .hero-vid {
-  position: absolute;
-  z-index: -20;
-  height: 100vw;
-  width: 100vw;
-  max-width: none;
-}
+
 
   .hero-banner {
     padding: 0;
