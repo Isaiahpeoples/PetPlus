@@ -357,11 +357,25 @@ Hero
   font-family: "Knewave", system-ui;
   font-weight: 400;
   font-style: normal;
-  font-size: 5rem;
+  font-size: 7rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.hero-banner h1 span {
+  color: var(--clr-primary-5);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--clr-primary-5);
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--clr-primary-8), 0 0 40px var(--clr-primary-5);
+  }
 }
 
 .hero-banner p {
-
   position: relative;
   max-width: 35rem;
   margin-left: auto;
@@ -369,6 +383,7 @@ Hero
   color: var(--clr-white);
   letter-spacing: var(--spacing);
   font-family: 'Open Sans';
+  font-size: 1.5rem;
 }
 
 .hero-btn {
@@ -427,16 +442,34 @@ Hero
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
   }
 
   .hero-banner h1 {
-    margin-bottom: 2rem;
+    margin: 0;
+    left: 200px;
+    text-align: right;
+    max-width: 600px;
+    margin-left: auto;
+    padding-right: 4rem;
   }
 
   .hero-banner p {
+    margin: 0;
+    left: 200px;
+    text-align: right;
+    max-width: 500px;
     margin-left: auto;
-    margin-bottom: 2rem;
+    padding-right: 4rem;
+  }
+
+  .hero-btn {
+    left: 200px;
+    margin-right: 4rem;
   }
 }
 
@@ -455,41 +488,49 @@ Hero
 
 
 
-@media screen and (min-width: 1778px) {
+@media screen and (min-width:1200px) {
   .hero {
     background: none;
-    min-height: 100vh;
-    min-width: 100vw;
+    height: 100vh;
+    width: 100%;
     margin-bottom: 4rem;
   }
-  
-
-
-
 
   .hero-banner {
     padding: 0;
+    position: relative;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
   }
 
   .hero-banner h1 {
-  top: 17.5rem;
-  right: 4rem;
-  position: absolute;
-  max-width: 35rem;
-}
+    margin: 0;
+    left: 200px;
+    text-align: right;
+    max-width: 600px;
+    margin-left: auto;
+    padding-right: 4rem;
+  }
 
   .hero-banner p {
-    top: 30rem;
-    right: 4rem;
-    position: absolute;
-    max-width: 35rem;
+    margin: 0;
+    left: 200px;
+    text-align: right;
+    max-width: 500px;
+    margin-left: auto;
+    padding-right: 4rem;
   }
 
   .hero-btn {
-  top: 35rem;
-  right: 15rem;
-  position: absolute;
-}
+    left: 200px;
+    margin-right: 4rem;
+  }
 }
 
 /*
