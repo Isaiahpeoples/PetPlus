@@ -29,7 +29,7 @@ This **pet products e-commerce website**, built with HTML, CSS using Flexbox for
 ## 📸 Project Screenshot
 
 <div align="center">
-<img src="https://online-project-images.s3.us-east-2.amazonaws.com/petplus/Pet+Plus-1.gif"  height="85%" width="85%" alt="Treat Haven Logo"/>
+<img src="https://online-project-images.s3.us-east-2.amazonaws.com/petplus/Pet+Plus-2.gif"  height="85%" width="85%" alt="Treat Haven Logo"/>
 </div>
 
 <p align="center">
